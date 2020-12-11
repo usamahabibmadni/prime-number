@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>prime number</title>   
+</head> 
+<body> 
+<center>      
+<form name="myform">     
+<input type="number" name=n value="" placeholder=" Enter the number ">       
+<br><br>   
+<input type="button" value="Check" onClick="usama()"> 
+<br> 
+</form></center>  
+<script>
+    function usama() { 
+let bhai = true;
+let i = true;
+let usama = true;  
+bhai = document.myform.n.value; 
+bhai = parseInt(bhai) 
+for(i = 2; i <= bhai - 1; i++) 
+if (bhai % i == 0) { 
+usama = false; 
+break; 
+}
+if (usama == true) 
+alert(bhai + "ture") 
+else
+alert(bhai + "false")
+} 
+</script> 
+</body> 
+</html>
